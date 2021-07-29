@@ -1,0 +1,24 @@
+
+{
+  "name": "mekaboo/swarzie",
+  "description": "",
+  "config": {
+    "optimize-autoloader": true,
+    "classmap-authoritative": true
+  },
+  "require": {
+    "ext-curl": "*",
+    "ext-json": "*",
+    "ext-mysqli": "*",
+    "vlucas/phpdotenv": "v5.3.0"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "9.5.7"
+  },
+  "autoload": {
+    "psr-4": {
+      "Manevia\\": ["classes/Manevia/"],
+      "Manevia\\Controllers\\": ["controllers/v1/"]
+    }
+  }
+}
